@@ -1,0 +1,161 @@
+*{
+    /* Reset CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+/* header */
+.seccion-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)), url('../imagenes/fondo_header.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8rem;
+}
+.seccion-1 .encabezado{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    background-color: #193cb8;
+    letter-spacing: 1rem;
+    border-bottom: 4rem;
+    text-shadow: 0.5rem 0.5rem 1rem black;
+    transform: skew(-12deg);
+    box-shadow: 0.5rem 0.5rem 1rem black;
+}
+.seccion-1 img{
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.8rem dotted #ab0d4f;
+    padding: 0.5rem;
+    opacity: 0.92;
+    box-shadow: 3rem 3rem 2rem rgba(0, 0, 0, 0.4);
+}
+.seccion-1 .persona{
+    font-size: 4rem;
+    color: white;
+    background-color: #193cb8;
+    margin: 4rem 0;
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.5rem 0.5rem 1rem black;
+    box-shadow: 3rem 3rem 2rem rgba(0, 0, 0, 0.4);
+    transform: skew(-12deg);
+}
+/* menu de navegacion */
+.menu{
+    width: 100%;
+    background-color: #193cb8;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li{
+    position: relative;
+    display: inline-block;
+}
+.menu ul li a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+}
+.menu a:hover{
+    background-color: white;
+    color: #193cb8;
+}
+.menu a:active{
+    background-color: #3E9FFF;
+    color: black;
+}
+.menu li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 64%;
+    background-color: #193cb8;
+}
+.menu li:hover ul{
+    display: block;
+    opacity: 0.8;
+    z-index: 1;
+}
+/* sexxion-2 sobre mi */
+.seccion-2{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0 10rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion-2 .encabezado{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #212121;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    border-bottom: 0.3rem solid #212121;
+    text-shadow: 0.2rem 0.2rem 5rem #212121;
+    margin-bottom: 4rem;
+}
+.texto{
+    width: 80rem;
+    font-size: 1.8rem;
+    color: #212121;
+    text-align: justify;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+}
+.caja-progreso{
+    margin-bottom: 4rem;
+}
+.barra-progreso{
+    width: 60rem;
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: 0.3rem;
+    margin: 1.6rem 0;
+    box-shadow: 0.2rem 0.2rem;
+    position: relative;
+}
+.texto-progreso{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    position: absolute;
+    left: 1rem;
+}
+.texto-progreso span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+.porcentaje-progreso{
+    width: 90%;
+    height: 100%;
+    background-color: #193cb8;
+    border-radius: 0.3rem;
+}
